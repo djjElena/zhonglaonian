@@ -1,0 +1,129 @@
+@charset"utf-8";
+.head{
+    width:100%;
+    background:linear-gradient(to bottom,#315594,#466ba6,#5076b0,#5c86bc) ;
+    height:320px;
+    position: relative;
+}
+.toubu{
+    position: absolute;
+    top:0;
+    right:0;
+}
+.dingbu{
+    width:700px;
+    background: linear-gradient(to left,#e3e3e3,#d2d5db,#95a4c0,#3b5c98);
+}
+.dingbu ul{
+    display: flex;
+    justify-content: flex-end;
+    padding:10px;
+}
+.dingbu ul li{
+    margin-right:35px;
+}
+.dingbu ul li a{
+    font-size: 18px;
+    color:black;
+}
+.title1{
+    color:white;
+    font-weight: bold;
+    font-size: 80px;
+    position: absolute;
+    bottom:125px;
+    left:95px;
+}
+.title2{
+    color:white;
+    font-size: 40px;
+    position: absolute;
+    bottom:55px;
+    left: 95px;
+}
+.srk{
+    display: flex;
+    width:450px;
+    right:15%;
+    justify-content: flex-start;
+    position: absolute;;
+    bottom:55px;
+}
+.srk input{
+    width:100%;
+    background-color: transparent;
+    border:1px solid white;
+    line-height: 40px;
+    padding-left: 10px;
+}
+::-webkit-input-placeholder{
+    color:white;
+    font-size:16px;;
+}
+.srk div{
+    background-color: white;
+    width:50px;
+    padding-top:5px;
+}
+.srk>div a{
+    display: block;
+}
+.ewm{
+    position: absolute;
+    right:35px;
+    bottom: 35px;
+}
+/*导航条*/
+.nav{
+    width:100%;
+    background-color: #013d93;
+    padding:10px;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+.nav ul li a{
+    font-size: 16px;
+    color:white;
+    font-weight: bold;
+}
+
+/*底部css*/
+.foot>div:first-child{
+    width:100%;
+    background-color: #e6e6e6;
+}
+.foot>div ul{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding:10px;
+}
+.foot>div ul li a{
+    font-size: 16px;
+    color:#777777;
+    padding:10px;
+}
+.dibu{
+    background-color: #ffffff;
+}
+.dibu p{
+    color:#999999;
+    text-align: center;
+    font-size: 15px;
+    padding-top:15px;
+}
+.dibu p:last-child{
+    padding-bottom: 30px;
+}
+
+/*2018-12-13*/
+@media screen and (max-width: 1200px){
+    .head,.navs,.nav,.foot,.foot>div:first-child,.nav>div:first-child{
+        width:1200px;
+    }
+    .srk {
+        left: 60%;
+    }
+}

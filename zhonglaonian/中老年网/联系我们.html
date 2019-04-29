@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>联系我们</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/headfoot.css"/>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/second.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!-- 百度地图 -->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=nxW0akynjKF8Ag0G0uVVwq0t6ak1Q1Zj"></script>
+</head>
+<body>
+<div class="aaa">
+    <!--头部-->
+    <div class="navs">
+        <script>$(".navs").load("head.html");</script>
+    </div>
+    <!--主体-->
+    <div class="content">
+        <div class="content-left">
+            <div class="content-left-top">
+                <a href="#">首页 > </a><span>联系我们 ></span>
+            </div>
+            <div class="lxwm">
+                <div class="lxwm-title">
+                    <h1>联系我们</h1>
+                    <p>来源：中国政府网      作者：     发布时间：2018-09-25 09:01     浏览量：119</p>
+                </div>
+                <div class="huisuo">
+                    <div>
+                        <h1>全国中老年网</h1><br/>
+                        <h2 class="aa"></h2>
+                        <p class="contact">联系电话：+86 000 0000 0000</p><br/>
+                        <p class="contact">销售热线：+86 000 0000 0000</p><br/>
+                        <p class="contact">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编：100011</p><br/>
+                        <p class="contact">公司地址：北京市东城区安定门外大街甲57号</p>
+                    </div>
+                    <div>
+                        <div class="ff">
+                            <img src="images/second/ewm.jpg" alt=""/>
+                            <p class="tt">微信公众号</p>
+                        </div>
+                        <div class="ff">
+                            <img src="images/second/ewm.jpg" alt=""/>
+                            <p class="tt">官方微博</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 百度地图-->
+                <div style="border:#ccc solid 1px;font-size:12px" id="map"></div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div>
+                <div class="shukuang"></div>
+                <h1>热门资讯</h1>
+            </div>
+            <div>
+                <a href="#">
+                    <ul class="active"><span class="fk"></span>习近平向世界公众科学素质促进大会致贺信</ul>
+                </a>
+                <a href="#">
+                    <ul><span class="fk"></span>习近平向世界公众科学素质促进大会致贺信</ul>
+                </a>
+                <a href="#">
+                    <ul><span class="fk"></span>习近平向世界公众科学素质促进大会致贺信</ul>
+                </a>
+                <a href="#">
+                    <ul><span class="fk"></span>习近平向世界公众科学素质促进大会致贺信</ul>
+                </a>
+                <a href="#">
+                    <ul><span class="fk"></span>习近平向世界公众科学素质促进大会致贺信</ul>
+                </a>
+                <a href="#">
+                    <ul><span class="fk"></span>习近平向世界公众科学素质促进大会致贺信</ul>
+                </a>
+                <a href="#">
+                    <ul><span class="fk"></span>习近平向世界公众科学素质促进大会致贺信</ul>
+                </a>
+                <a href="#">
+                    <ul><span class="fk"></span>习近平向世界公众科学素质促进大会致贺信</ul>
+                </a>
+                <a href="#">
+                    <ul><span class="fk"></span>习近平向世界公众科学素质促进大会致贺信</ul>
+                </a>
+                <a href="#">
+                    <ul><span class="fk"></span>习近平向世界公众科学素质促进大会致贺信</ul>
+                </a>
+                <a href="#">
+                    <ul><span class="fk"></span>习近平向世界公众科学素质促进大会致贺信</ul>
+                </a>
+                <a href="#">
+                    <ul><span class="fk"></span>习近平向世界公众科学素质促进大会致贺信</ul>
+                </a>
+                <a href="#">
+                    <ul><span class="fk"></span>习近平向世界公众科学素质促进大会致贺信</ul>
+                </a>
+                <a href="#">
+                    <ul><span class="fk"></span>习近平向世界公众科学素质促进大会致贺信</ul>
+                </a>
+                <a href="#">
+                    <ul><span class="fk"></span>习近平向世界公众科学素质促进大会致贺信</ul>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <div class="foots">
+        <script>
+            $(".foots").load("foot.html");
+        </script>
+    </div>
+</div>
+<script>
+    /*百度地图*/
+    $(function(){
+        var map = new BMap.Map("map");
+        var point = new BMap.Point(116.411645,39.964531);
+        map.centerAndZoom(point, 18);                 // 初始化地图，设置中心点坐标和地图级别
+        //添加导航控件
+        map.addControl(new BMap.NavigationControl());
+        //添加缩放控件
+        map.addControl(new BMap.ScaleControl());
+        //添加概览图
+        map.addControl(new BMap.OverviewMapControl());
+        //添加地图类型控件
+        map.addControl(new BMap.MapTypeControl());
+        var marker = new BMap.Marker(point);
+        //默认动画
+        marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+        //创建标注
+        map.addOverlay(marker);         //将标注添加到地图中
+        map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
+        //信息提示的窗口
+        var opts = {
+            width : 0,     // 信息窗口宽度
+            height: 0,     // 信息窗口高度
+            title : "全国中老年网" , // 信息窗口标题
+            enableMessage:true//设置允许信息窗发送短息
+        };
+        var infoWindow = new BMap.InfoWindow("", opts);  // 创建信息窗口对象
+        map.openInfoWindow(infoWindow,point); //开启信息窗口
+        marker.addEventListener("click", function(){
+            map.openInfoWindow(infoWindow,point); //开启信息窗口
+        });
+    })
+</script>
+</body>
+
+</html>

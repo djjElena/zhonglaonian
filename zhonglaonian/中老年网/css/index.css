@@ -1,0 +1,212 @@
+@charset"utf-8";
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.aaa{
+    /*width:1920px;*/
+    overflow: auto;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    margin:50px 0;
+}
+.first .left{
+    width:45%;
+    height:490px;
+}
+.first .right{
+    width:50%;
+}
+.left{
+    margin-left: 10px;
+    border:1px solid black;
+    padding:10px;
+}
+.screen ul li img{
+    width:835px;
+    height:466px;
+}
+.right-top{
+    border-bottom: 2px solid #c40d23;
+}
+.right-top ul{
+    padding:5px;
+    display: flex;
+    justify-content: flex-start;
+}
+.right-top ul li:first-child{
+    margin-left: 20px;
+}
+.right-top>ul>li a{
+    font-size: 30px;
+}
+.right-top ul li.active a span,.third-left ul li.active a{
+    color:#c40d23;
+}
+.fk{
+    display: inline-block;
+    width:10px;
+    height:10px;
+    background-color: #dbdbdc;
+    margin-right:10px;
+}
+.right-content a{
+    margin-top:20px;
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color:#343535;
+    padding-right:15px;
+}
+.right-content a ul{
+    width:80%;
+    height:25px;
+    overflow: hidden;
+}
+.second>div:first-child{
+    margin-bottom: 20px;
+}
+.second-content{
+    margin-left: 10px;
+    width:45% !important;
+}
+.third-top{
+    width:100%;
+    background: linear-gradient(to left,#bababb,#fdfdfd);
+    margin-bottom: 30px;
+}
+.third-top span{
+    display: block;
+    font-size: 60px;
+    color:#332f2f;
+    text-align: center;
+    padding:20px 0;
+}
+.third-left{
+    border-bottom: 0 !important;
+}
+.third-right>ul>li:first-child{
+    margin-left: 0 !important;
+    padding-right:15px;
+    border-right:2px solid #c40d23;
+}
+.yongpin{
+    background-color: #e6e7e7;
+}
+.yongpin ul{
+    display: flex;
+    justify-content: space-around;
+}
+.third-right>ul>li:first-child{
+    width:25%;
+}
+.third-right>ul>li:last-child{
+    width:75%;
+}
+.third-right>ul li  .yongpin>ul li a{
+    font-size: 14px;
+    color:black
+}
+.third-right>ul>li:first-child .yongpin>ul li:first-child{
+    margin-left: 0;
+}
+.third-right>ul li  .yongpin>ul li.active a{
+    color:#c40d23;
+}
+.jigou{
+    width:95% !important;
+    margin-left: 20px;
+}
+.jigou ul{
+    display: flex;
+    justify-content: flex-start;
+}
+.jigou ul li{
+    margin-right:25px;
+}
+.food{
+    margin-top:50px;
+    display: flex;
+    justify-content: space-around;
+}
+.food>div{
+    width:32%;
+}
+.food>div a img{
+    width:100%;
+}
+.five-left{
+    margin-left: 10px !important;
+    width:45% !important;
+}
+.five-right{
+    width:53% !important;
+    height:550px !important;
+    margin-right:10px;
+    margin-top:50px;
+    padding-bottom: 20px !important;
+}
+.five-right img{
+    height:100%;
+}
+.five-right p{
+    text-align: center;
+    font-size: 14px;
+}
+.zhyy{
+    margin-top:15px;
+}
+.zhyy>ul{
+    padding:10px;
+}
+.zhyy>ul li a{
+    margin-top:0;
+}
+.zhyy>ul li.active a{
+    color:#c40d23;
+}
+.zhyy>ul li{
+    text-align: center;
+}
+/*2018-12-13*/
+.second>div:first-child img{
+    width:100%;
+}
+@media screen and (min-width: 1200px) and (max-width: 1919px){
+    .aaa{
+        width:100%;
+    }
+    .third-right>ul>li:first-child {
+        width: 35%;
+    }
+    .third-right>ul>li:last-child {
+        width: 65%;
+    }
+    .srk {
+        width: 290px;
+        right: 10%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .aaa{
+        width:1200px;
+        overflow-x: auto;
+    }
+    .third-top {
+         width: 100%;
+    }
+    .third-right>ul>li:first-child {
+        width: 51%;
+    }
+    .food>div{
+        width:33%;
+    }
+    .food>div a img{
+        width:100%;
+    }
+
+}
